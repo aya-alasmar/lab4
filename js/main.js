@@ -1,4 +1,4 @@
-var name =' ';
+/*
 name = prompt("please wnter your name");
 while(name === '' || name ===null){
     name = prompt("please wnter your name");
@@ -10,9 +10,9 @@ var number=0;
 number = prompt("What star rating would you give, 1-5?");
 
 if(number>0 && number<=5){
-console.log(number);
+
     for(var i = 0; i<number ; i++){
-    document.write("<img src='star.png' width='50px' heigth='50px'>"+ (i+1));
+    document.write("<img src=star.png width=50px heigth='50px'>"+ (i+1));
     
     }
 
