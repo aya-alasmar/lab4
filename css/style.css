@@ -80,3 +80,7 @@ footer{
    display: inline-block;
 }
 
+.rate{
+    float: right;
+}
+

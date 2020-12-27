@@ -1,22 +1,34 @@
-/*
-name = prompt("please wnter your name");
-while(name === '' || name ===null){
-    name = prompt("please wnter your name");
-}
 
-document.write('<h3> Welcome <i>'+name+' </i></h3>'); 
-
-var number=0;
-number = prompt("What star rating would you give, 1-5?");
-
-if(number>0 && number<=5){
-
-    for(var i = 0; i<number ; i++){
-    document.write("<img src=star.png width=50px heigth='50px'>"+ (i+1));
-    
+function validation(uinput,msg){
+    while(uinput === '' || uinput === null || uinput === undefined){
+        uinput = prompt(msg);
     }
-
+    return uinput;
 }
+
+function alertMsg(uinput,msg){
+    alert(msg+uinput);
+}
+
+function ratevalidation(uinput,msg){
+    if(uinput>0 && uinput<=5){
+        for(var i = 0; i<uinput ; i++){
+        document.write(msg);
+        }
+    }
+    else if(uinput>5){
+        for(var i = 0; i<5 ; i++){
+            document.write(msg);
+            }
+    }
+}
+
+var username= validation(username,"please enter your name");
+var rate=validation(rate,"What star rating would you give, 1-5?");
+ratevalidation(rate,"<img src=star.png width=30px heigth='30px' class='rate'>")
+alertMsg("aya" ," thank you ");
+
+
 
 
 //// this code for lab 6
